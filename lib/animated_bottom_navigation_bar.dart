@@ -1,5 +1,6 @@
 library animated_bottom_navigation_bar;
 
+import 'package:animated_bottom_navigation_bar/src/diamond_notched_shape.dart';
 import 'package:animated_bottom_navigation_bar/src/navigation_bar_item.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -272,7 +273,7 @@ class _AnimatedBottomNavigationBarState
       elevation: widget.elevation ?? 8,
       color: Colors.transparent,
       clipper: CircularNotchedAndCorneredRectangleClipper(
-        shape: CircularNotchedAndCorneredRectangle(
+        shape: DiamondNotchedAndCorneredRectangle(
           animation: widget.notchAndCornersAnimation,
           notchSmoothness:
               widget.notchSmoothness ?? NotchSmoothness.defaultEdge,
